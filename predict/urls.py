@@ -4,5 +4,6 @@ from . import views
 app_name = 'predict'
 
 urlpatterns = [
-    path('', views.predict, name='prediction_page')
+    path('', views.predict, name='prediction_page'),
+    path('predict/', views.predict_chances, name='submit_prediction')
 ]
